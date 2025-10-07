@@ -1,3 +1,14 @@
+@import "tailwindcss";
+
+
+:root{
+  --glass: rgba(255,255,255,0.06);
+}
+
+body { background: linear-gradient(180deg,#020617 0%, #091226 100%); }
+
+/* tack on a little glass look for containers */
+.bg-glass { background: var(--glass); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.06); }
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

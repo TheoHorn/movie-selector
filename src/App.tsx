@@ -1,35 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Routes, Route } from "react-router-dom";
+import { Nav } from "./components/Nav";
+import MainPage from "./pages/MainPage";
+import ConfigPage from "./pages/ConfigPage";
+import ProfilesPage from "./pages/ProfilesPage";
+import UserPage from "./pages/UserPage";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="min-h-screen bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-black to-neutral-900 text-white">
+      <Nav />
+      <main className="max-w-6xl mx-auto p-6">
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/config" element={<ConfigPage />} />
+          <Route path="/profiles" element={<ProfilesPage />} />
+          <Route path="/user/:uid" element={<UserPage />} />
+        </Routes>
+      </main>
+    </div>
+  );
 }
-
-export default App

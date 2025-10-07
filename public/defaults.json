@@ -1,0 +1,94 @@
+{
+  "movies": [
+    {
+      "id": "m1",
+      "title": "Inception",
+      "poster": "https://image.tmdb.org/t/p/w500/qmDpIHrmpJINaRKAfWQfftjCdyi.jpg",
+      "ownerId": "u1",
+      "genre": "Action,Science Fiction",
+      "tmdbId": 27205
+    },
+    {
+      "id": "m2",
+      "title": "Parasite",
+      "poster": "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+      "ownerId": "u2",
+      "genre": "Drama,Thriller",
+      "tmdbId": 496243
+    },
+    {
+      "id": "m3",
+      "title": "Spirited Away",
+      "poster": "https://image.tmdb.org/t/p/w500/dL11DBPcRhWWnJcFXl9A07MrqTI.jpg",
+      "ownerId": "u1",
+      "genre": "Animation,Family,Fantasy",
+      "tmdbId": 129
+    },
+    {
+      "id": "m4",
+      "title": "The Matrix",
+      "poster": "https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
+      "ownerId": "u2",
+      "genre": "Action,Science Fiction",
+      "tmdbId": 603
+    },
+    {
+      "id": "m5",
+      "title": "The Grand Budapest Hotel",
+      "poster": "https://image.tmdb.org/t/p/w500/nX5XotM9yprCKarRH4fzOq1VM1J.jpg",
+      "ownerId": "u1",
+      "genre": "Comedy,Drama",
+      "tmdbId": 120467
+    },
+    {
+      "id": "m6",
+      "title": "Arrival",
+      "poster": "https://image.tmdb.org/t/p/w500/xu9zaAevzQ5nnrsXN6JcahLnG4i.jpg",
+      "ownerId": "u3",
+      "genre": "Drama,Science Fiction",
+      "tmdbId": 329865
+    },
+    {
+      "id": "m7",
+      "title": "The Shawshank Redemption",
+      "poster": "https://image.tmdb.org/t/p/w500/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg",
+      "ownerId": "u2",
+      "genre": "Drama,Crime",
+      "tmdbId": 278
+    },
+    {
+      "id": "m8",
+      "title": "Your Name",
+      "poster": "https://image.tmdb.org/t/p/w500/q719jXXEzOoYaps6babgKnONONX.jpg",
+      "ownerId": "u3",
+      "genre": "Animation,Drama,Fantasy",
+      "tmdbId": 372058
+    }
+  ],
+  "users": [
+    {
+      "id": "u1",
+      "name": "Alice",
+      "avatar": "A",
+      "coins": 5,
+      "weights": { "m1": 1.5, "m5": 1.3 },
+      "perMovieCoins": { "m3": 1 }
+    },
+    {
+      "id": "u2",
+      "name": "Bob",
+      "avatar": "B",
+      "coins": 2,
+      "weights": { "m4": 2.0, "m7": 1.8 },
+      "perMovieCoins": { "m4": 2 }
+    },
+    {
+      "id": "u3",
+      "name": "Carol",
+      "avatar": "C",
+      "coins": 8,
+      "weights": { "m6": 1.7, "m8": 1.6 },
+      "perMovieCoins": { "m6": 3, "m8": 1 }
+    }
+  ]
+}
